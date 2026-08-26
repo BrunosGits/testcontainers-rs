@@ -528,6 +528,7 @@ mod tests {
             "testcontainers".to_string(),
         );
 
+        labels.insert("org.testcontainers".to_string(), "true".to_string());
         #[cfg(feature = "reusable-containers")]
         labels.extend([(
             "org.testcontainers.session-id".to_string(),
